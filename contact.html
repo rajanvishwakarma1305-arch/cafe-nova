@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | Cafe Nova</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1600');
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+background-repeat:no-repeat;
+
+}
+
+/* Contact Cards */
+
+.features{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+.feature{
+
+background:rgba(0,0,0,0.75);
+padding:25px;
+border-radius:15px;
+text-align:center;
+border:2px solid #d4af37;
+backdrop-filter:blur(5px);
+
+}
+
+/* Contact Form */
+
+.booking-form{
+
+max-width:700px;
+margin:auto;
+padding:30px;
+background:rgba(0,0,0,0.75);
+border:2px solid #d4af37;
+border-radius:15px;
+backdrop-filter:blur(5px);
+
+}
+
+.booking-form input,
+.booking-form textarea{
+
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+font-size:16px;
+
+}
+
+.booking-form button{
+
+width:100%;
+padding:15px;
+background:#d4af37;
+color:black;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+
+}
+
+.booking-form button:hover{
+
+transform:scale(1.03);
+
+}
+
+/* Google Map */
+
+iframe{
+
+box-shadow:0 0 20px rgba(212,175,55,0.4);
+
+}
+/* WhatsApp Floating Button */
+
+.whatsapp-icon{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:38px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+z-index:9999;
+transition:0.3s;
+}
+
+.whatsapp-icon:hover{
+transform:scale(1.1);
+background:#20ba5a;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">☕ Cafe Nova</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+<li>
+<a href="cart.html">
+🛒 Cart (<span id="cartCount">0</span>)
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+<section style="margin-top:100px;">
+
+<h1 class="title">Contact Cafe Nova</h1>
+
+<div class="features">
+
+<div class="feature">
+
+<h3>📍 Address</h3>
+
+<p>
+Cafe Nova<br>
+Delhi NCR , gudgaon, India
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>📞 Phone</h3>
+
+<p>
++91 8750741208
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>✉ Email</h3>
+
+<p>
+teamcafenova@gmail.com
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>🕒 Opening Hours</h3>
+
+<p>
+Daily<br>
+9:00 AM - 11:00 PM
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT FORM -->
+
+<section>
+
+<h2 class="title">Send Us A Message</h2>
+
+<div class="booking-form">
+
+<form>
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Your Email"
+required>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<textarea
+rows="6"
+placeholder="Write your message..."
+required>
+</textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- SOCIAL MEDIA -->
+
+
+<section>
+
+<h2 class="title">Contact Us</h2>
+
+<div class="features">
+
+<div class="feature">
+<a href="https://wa.me/918750741208" target="_blank" style="text-decoration:none;color:white;">
+<i class="fa-brands fa-whatsapp" style="font-size:60px;color:#25D366;"></i>
+<h3>WhatsApp</h3>
+<p>+91 8750741208</p>
+</a>
+</div>
+
+<div class="feature">
+<a href="mailto:teamcafenova@gmail.com" style="text-decoration:none;color:white;">
+<i class="fa-solid fa-envelope" style="font-size:60px;color:#d4af37;"></i>
+<h3>Email</h3>
+<p>teamcafenova@gmail.com</p>
+</a>
+</div>
+
+<div class="feature">
+<a href="https://www.instagram.com/cafe.nova.hub/" style="text-decoration:none;color:white;">
+<i class="fa-brands fa-instagram" style="font-size:60px;color:#E1306C;"></i>
+<h3>Instagram</h3>
+<p>@cafenova</p>
+</a>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GOOGLE MAP -->
+
+<section>
+
+<h2 class="title">Find Us</h2>
+
+<div style="width:100%;height:450px;">
+
+<iframe
+src="https://maps.google.com/maps?q=Delhi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="450"
+style="border:0;border-radius:15px;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Cafe Nova | Luxury Coffee Experience
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+<!-- WhatsApp Floating Icon -->
+
+
+</body>
+</html>
